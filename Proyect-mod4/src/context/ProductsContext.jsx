@@ -19,14 +19,12 @@ export function ProductsProvider({ children }){
 
     //Simulación de la petición de los datos de una API
     useEffect(() => {
-        setTimeout(() => {
-            setProducts(getAllProducts);
-        }, 1000); //Simula la espera de una petición HTTP
+            setProducts(getAllProducts());
     },[])
 
 
     return(
-        <ProductsContext.Provider value={products}>
+        <ProductsContext.Provider value={{products}}>
             {children}
         </ProductsContext.Provider>
     )

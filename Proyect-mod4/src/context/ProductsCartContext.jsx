@@ -52,7 +52,7 @@ export function ProductsCartProvider({ children }) {
                 return item;
             }
             //Se hace un filter para tener un array con los productos que no son null
-        }).filter((iten) => item !== null));
+        }).filter((item) => item !== null));
     }
 
     return(
