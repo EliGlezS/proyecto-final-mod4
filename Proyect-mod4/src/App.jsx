@@ -7,6 +7,8 @@ import Home from './pages/Home'
 import { Routes,Route } from 'react-router-dom'
 import './App.css'
 import ShoppingCart from './pages/ShoppingCart'
+import NavBarComponent from './components/NavBarComponent'
+
 
 function App() {
   
@@ -14,6 +16,7 @@ function App() {
     <>
     <ProductsProvider>
       <ProductsCartProvider>
+        <NavBarComponent/>
         <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/products/:id' element={<ProductsDetails/>}/>

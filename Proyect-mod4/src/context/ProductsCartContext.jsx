@@ -19,14 +19,14 @@ export function ProductsCartProvider({ children }) {
 
     //Manejador de añadir producto al carrito
     const addProductCart = (product) =>{
-        setProductsCart(productsCart.find((item) =>{
-            if (item.id === product.id) {
-                increaseProduct(product);
-            }else{
-                return [...productsCart, {...product, quantity: 1}] 
-            }
-        }));
-    }
+        const existingProducts = productsCart.find((item) => item.id === product.id);
+
+        if (existingProducts) {
+            increaseProductQuantity(product);
+        } else {
+            return setProductsCart([...productsCart, {...product, quantity: 1}]);
+        }
+    };
 
     //Manejador de eliminar producto al carrito
     const deleteProductCart = (productId) => {

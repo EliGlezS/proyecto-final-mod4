@@ -1,7 +1,6 @@
 //Importaciones
 import CartListComponent from "../components/CartListComponent";
 
-
 const ShoppingCart = () => {
   return (
     <div>
