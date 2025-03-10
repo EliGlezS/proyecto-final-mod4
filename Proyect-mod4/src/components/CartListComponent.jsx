@@ -4,6 +4,8 @@
 import { useState, useEffect, useContext } from "react"
 import { ProductsCartContext } from "../context/ProductsCartContext"
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import useScrollToTop from "../customHook/useScrollToTop";
 
 const CartListComponent = () => {
     //Se usa el contexto creado para el carrito de compra
@@ -24,8 +26,11 @@ const CartListComponent = () => {
 
     //Handler para volver a home y ver los productos
     const handlerGoProducts = () => {
-        navigate("/");
+         navigate("/");
     }
+
+    //Se usa el custom Hook para hacer scroll al inicio
+    useScrollToTop();
 
   return (
     <div>
@@ -45,7 +50,7 @@ const CartListComponent = () => {
                     <img src={product.image} alt={product.name}/>
                     <div>
                         <p>{product.name}</p>
-                        <p>{product.price}</p>
+                        <p>{product.price} $</p>
                     </div>
                     <div>
                         <div>
@@ -64,7 +69,13 @@ const CartListComponent = () => {
                 </div>
                 {/*Podría poner un botón chekout y compruebe si está login, 
                 si es así va a una pag que ponga proceda al pago, Gracias por su compra, y si no que te lleve a login */}
-                <button onClick={handlerGoProducts}>Continue Shopping</button>
+               <p>
+                    <Link to="/"> 
+                        Continue Shopping
+                    </Link>
+                </p> 
+                
+               
             </div>
             </>
            

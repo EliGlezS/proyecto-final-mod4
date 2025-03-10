@@ -2,7 +2,8 @@
 import { useContext, useEffect, useState } from "react"
 import { ProductsCartContext } from "../context/ProductsCartContext"
 import { ProductsContext } from "../context/ProductsContext"
-import { useNavigate, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
+import useScrollToTop from "../customHook/useScrollToTop"
 
 const DetailsComponent = () => {
 
@@ -19,22 +20,24 @@ const DetailsComponent = () => {
   const [productDetails, setProductDetails] = useState(null);
 
   //Se usa Navigate 
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   
   useEffect(() => {
     const prod = products.find((item) => item.id === parseInt(id));
     setProductDetails(prod);
   }, [id, products]);
 
+    //Se llama al custom hook de hacer scroll
+    useScrollToTop();
 
   if (!productDetails) {
     return <p>Product not found</p>;
   }
 
   //manejador para redirigir a home pulsando el botón atrás
-  const handlerBack = () => {
-    navigate("/");
-  }
+  // const handlerBack = () => {
+  //   navigate("/");
+  // }
 
   return (
     <div>
@@ -50,11 +53,24 @@ const DetailsComponent = () => {
                 <li key={index}>{feature}</li>
             ))}
             </ul>
-            <p>{productDetails.price}</p>
+            <p>{productDetails.price} $</p>
         </div>
         <div>
+          {/*Si el producto que estamos mirando está en stock (true) aparece un botón que lo añade al carrito, pero 
+          si stock es false aparece un botón desabilitado */}
+          {productDetails.inStock ? (
             <button onClick={() => addProductCart(productDetails)}>Add to Cart</button>
-            <button onClick={handlerBack}>Back</button>
+          ) : (
+            <button disabled>Not available at the moment</button>
+          )
+        }  
+            {/* Mirar si es corecto navigate o link */}
+            <p>
+              <Link to="/"> 
+                Back Home
+              </Link>   
+            </p>
+            
         </div>
     </div>
   )
