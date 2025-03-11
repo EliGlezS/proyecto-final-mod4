@@ -8,6 +8,8 @@ import { Routes,Route } from 'react-router-dom'
 import './App.css'
 import ShoppingCart from './pages/ShoppingCart'
 import NavBarComponent from './components/NavBarComponent'
+import { UserProvider } from './context/UserContext'
+import Checkout from './pages/Checkout'
 
 
 function App() {
@@ -16,12 +18,15 @@ function App() {
     <>
     <ProductsProvider>
       <ProductsCartProvider>
+        <UserProvider>
         <NavBarComponent/>
         <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/products/:id' element={<ProductsDetails/>}/>
         <Route path='/cart' element={<ShoppingCart/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
       </Routes>
+        </UserProvider>
       </ProductsCartProvider>
     </ProductsProvider>
     
