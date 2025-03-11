@@ -1,7 +1,7 @@
 /*Este Contexto se crea para el login del usuario */
 
 //Importaciones
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
 //Creación del contexto
 
@@ -12,9 +12,11 @@ export const UserContext = createContext();
 export const UserProvider = ({children}) => {
 
     /*Se usan dos useState uno para guardar si el usuario está logeado 
-    y otro para guardar el nombre del usuario que se usará posteriormente*/
+    y otro para guardar el nombre del usuario que se usará posteriormente (se usa
+    otro para el password aunque recomiendan NO guardar la contraseña?)*/
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [username, setUserName] = useState("");
+    const [password, setPassword] = useState("");
 
     //Función para logear al usuario 
     const login = (name) =>{
@@ -26,10 +28,11 @@ export const UserProvider = ({children}) => {
     const logout = () =>{
         setIsLoggedIn(false); //El usuario pasa a no estar logeado
         setUserName(""); //al no estar logeado el usuario no tiene nombre guardado
+        setPassword("");
     }
 
     return(
-        <UserContext.Provider value={{ isLoggedIn, username, login, logout }}>
+        <UserContext.Provider value={{ isLoggedIn, username, password, setUserName, setPassword, login, logout }}>
             {children}
         </UserContext.Provider>
     )

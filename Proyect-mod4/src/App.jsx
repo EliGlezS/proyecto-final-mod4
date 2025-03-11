@@ -10,6 +10,7 @@ import ShoppingCart from './pages/ShoppingCart'
 import NavBarComponent from './components/NavBarComponent'
 import { UserProvider } from './context/UserContext'
 import Checkout from './pages/Checkout'
+import Login from './pages/Login'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/products/:id' element={<ProductsDetails/>}/>
         <Route path='/cart' element={<ShoppingCart/>}/>
         <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='/login' element={<Login/>}/>
       </Routes>
         </UserProvider>
       </ProductsCartProvider>

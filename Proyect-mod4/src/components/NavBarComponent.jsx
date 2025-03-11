@@ -7,8 +7,10 @@ const NavBarComponent = () => {
     <div>
         <nav>
             <ul>
-                <li><Link to="/cart">Shopping Cart</Link></li>
                 <li><Link to="/">Home</Link></li>
+                <li><Link to="/cart">Shopping Cart</Link></li>
+                <li>News</li>
+                <li>Offers</li>
             </ul>
         </nav>
     </div>

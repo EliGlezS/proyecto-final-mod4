@@ -56,7 +56,7 @@ const technologicalProducts = [
       description: "Wireless headphones with noise cancellation, high-resolution sound, and 30-hour battery life.",
       price: 348.00,
       image: "https://www.lavanguardia.com/andro4all/hero/2022/05/Sony-WH-1000XM5.1652371428.8406.jpg?width=768&aspect_ratio=16:9&format=nowebp",
-      inStock: true,
+      inStock: false,
       features: [
         "Superior noise cancellation",
         "High-resolution sound",
