@@ -1,0 +1,110 @@
+/*Estilos para el header de tablet y ordenador*/
+
+
+    .header-laptop-shop{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        min-width: 200px;
+        height: 100px;
+        padding: 0 10px;
+        z-index: 99;
+        background-color: rgb(22, 21, 21);
+        margin-bottom: 40px;
+    
+        /*Estilos para el logo*/
+        .logo-shop{
+            width: 100px;
+            min-width: 75px;
+            min-height: auto;
+            height: 100px;
+    
+        }
+    
+        .nav-container{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            width: 30%;
+            min-width: 300px;
+            color: #c4c2bd;
+    
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+    
+                li{
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    justify-content: center;
+                    color: #c4c2bd;
+                    width: 80px;
+                    padding: 5px;
+                    font-weight: 400;
+                    height: 74px;                       
+                    width: auto;                       
+                    transition: color .3s ease-in-out;                      
+                    white-space: nowrap;  
+                    cursor: pointer;                                 
+                }
+                /*Al pasar el ratón por los li se pone un borde inferior con una línea*/
+                li:hover{
+                    border-bottom: 3px solid  #b090c0;
+                }
+
+            }
+    
+        }
+
+        .icons-header-laptop{
+            box-sizing: border-box; 
+            display: flex;
+            justify-content: row;
+            align-items: center;
+            justify-content: right;
+            gap: 60px;
+            width: 170px;
+           
+
+            .login-container-svg{
+                border-radius: 80%;
+                width: 50px;
+                min-width: 50px;
+                height: 50px;
+                background-color: #efe5f3;
+                padding: 10px;
+                border: 2px solid #755086;
+        
+                svg{
+                    color: #250f30;
+                }  
+            }
+    
+            .cart-container-svg{
+                border-radius: 80%;
+                width: 50px;
+                min-width: 50px;
+                height: 50px;
+                background-color: #efe5f3;
+                padding: 10px;
+                border: 2px solid #755086;
+        
+                svg{
+                    color: #250f30;
+                }
+            }
+
+        }
+
+        
+    }
+
+
+
+

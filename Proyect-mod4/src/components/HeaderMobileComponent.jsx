@@ -42,6 +42,7 @@ const HeaderMobileComponent = () => {
                     <li onClick={closeMenu}><Link to="/">Home</Link></li>
                     <li onClick={closeMenu}>News</li>
                     <li onClick={closeMenu}>Offers</li>
+                    <li onClick={closeMenu}>Our top sellers </li>
                 </ul>
             </nav>
 
