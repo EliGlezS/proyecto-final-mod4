@@ -12,7 +12,6 @@ const HeaderLaptopComponent = () => {
         <img className="logo-shop" src={logoPrimeZone} alt="logo de la empresa" />
 
         {/* NavBar */}
-        {/* NavBar */}
         <nav className="nav-container">
                 <ul>
                     <li><Link to="/">Home</Link></li>

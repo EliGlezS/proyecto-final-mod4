@@ -1,16 +1,17 @@
-/*Estilos para el header*/
+/*Estilos para el header Movil*/
 
 .header-mobile-shop{
     box-sizing: border-box;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
     background-color: rgb(22, 21, 21);
     width: 100%;
-    min-width: 350px;
+    min-width: 200px;
     height: 100px;
-    padding: 0 10px;
+    padding: 0 32px;
 
     /*Estilos para el logo*/
     .logo-shop{
@@ -22,69 +23,95 @@
 
     /* Estilos para el menú hamburguesa */
 
-.hamburguer-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 24px;
+    .hamburguer-menu {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 24px;
 
-    span {
-        height: 4px;
-        background-color: rgb(204, 198, 198);
-        border-radius: 5px;
-    }
-  }
-  
-  .menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 10;
-    padding: 50px 20px;
-    margin-top: 100px;
-
-    .open{
-        display: block;
-    }
-
-    .nav-container ul {
-        list-style-type: none;
-        padding: 0;
-
-        li{
-             margin: 10px 0;
+        span {
+            display: block;
+            height: 4px;
+            background-color: rgb(204, 198, 198);
+            border-radius: 5px;
         }
     }
+  
+    /*Estilos para el contenido dentro del menú*/
+    .menu {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        height: 100vh; /* Ocupa el 100% de la altura de la pantalla menos la altura del header */
+        background-color: #303233;
+        padding:  40px;
+        min-width: 350px;
+    
 
-  }
+        .open{
+            display: block;/*Muestra el menú cuando se activa*/
+        }
+
+        .nav-container{
+            width: 100%;
+            margin-bottom: 50px;
+        
+            ul {
+                width: 100%;
+                min-width: 200px;
+        
+                li{
+                    margin: 30px 0;
+                    font-size: 18px; 
+                    color:#e1d1e9;
+                }
+            }
+
+        }
+
+    }
   
   .profile-icons-header{
-    margin-top: 30px;
-    text-align: center;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 200px;
+    padding: 30px 50px; 
+    
     .login-mobile-container-svg{
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        border-radius: 80%;
+        width: 60px;
+        height: 60px;
+        background-color: #b090c0;
+        padding: 10px;
+        border: 2px solid #755086;
+
+        svg{
+            color: #250f30;
+        }  
     }
 
     .cart-mobile-container-svg{
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        border-radius: 80%;
+        width: 60px;
+        height: 60px;
+        background-color: #b090c0;
+        padding: 10px;
+        border: 2px solid #755086;
+
+        svg{
+            color: #250f30;
+        }
     }
   }
   
 }
-
-
-
-
 
 
 
