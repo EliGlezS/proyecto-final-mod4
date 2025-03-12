@@ -40,7 +40,6 @@ const HeaderMobileComponent = () => {
             <nav className="nav-container">
                 <ul>
                     <li onClick={closeMenu}><Link to="/">Home</Link></li>
-                    <li onClick={closeMenu}><Link to="/cart">Cart</Link></li>
                     <li onClick={closeMenu}>News</li>
                     <li onClick={closeMenu}>Offers</li>
                 </ul>
