@@ -19,7 +19,7 @@ export const UserProvider = ({children}) => {
     const [password, setPassword] = useState("");
 
     //Función para logear al usuario 
-    const login = (name) =>{
+    const login = (name) =>{ //Hacer localStorage.getItem()
         setIsLoggedIn(true); //El usuario ahora está logeado
         setUserName(name);
     }

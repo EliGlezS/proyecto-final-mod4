@@ -7,7 +7,7 @@ import Home from './pages/Home'
 import { Routes,Route } from 'react-router-dom'
 import './App.css'
 import ShoppingCart from './pages/ShoppingCart'
-import NavBarComponent from './components/NavBarComponent'
+import HeaderComponent from './components/HeaderComponent'
 import { UserProvider } from './context/UserContext'
 import Checkout from './pages/Checkout'
 import Login from './pages/Login'
@@ -20,7 +20,7 @@ function App() {
     <ProductsProvider>
       <ProductsCartProvider>
         <UserProvider>
-        <NavBarComponent/>
+        <HeaderComponent/>
         <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/products/:id' element={<ProductsDetails/>}/>

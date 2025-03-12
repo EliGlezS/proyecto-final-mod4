@@ -28,7 +28,7 @@ const DetailsComponent = () => {
   }, [id, products]);
 
     //Se llama al custom hook de hacer scroll
-    useScrollToTop();
+    //useScrollToTop();
 
   if (!productDetails) {
     return <p>Product not found</p>;
