@@ -7,7 +7,7 @@ const technologicalProducts = [
       category: "Smartphones",
       description: "High-end smartphone with Super Retina XDR display, A16 Bionic chip, and 48 MP camera.",
       price: 999.99,
-      image: "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111846_sp875-sp876-iphone14-pro-promax.png",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1058/10581354/1872-apple-iphone-14-pro-256gb-morado-oscuro-libre.jpg",
       inStock: true,
       features: [
         "6.1-inch Super Retina XDR display",
@@ -23,7 +23,7 @@ const technologicalProducts = [
       category: "Laptops",
       description: "Professional laptop with M2 Pro chip, Liquid Retina XDR display, and up to 32GB of RAM.",
       price: 1999.99,
-      image: "https://www.notebookcheck.org/fileadmin/Notebooks/Apple/MacBook_Pro_14_2024_M4/IMG_7747.JPG",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1079/10798401/13-apple-macbook-pro-apple-m3-pro-11-nucleos-18gb-512gb-ssd-gpu-14-nucleos-14-plata-foto.jpg",
       inStock: true,
       features: [
         "14\" Liquid Retina XDR display",
@@ -39,7 +39,7 @@ const technologicalProducts = [
       category: "Smartphones",
       description: "Premium smartphone with 200 MP camera, Dynamic AMOLED 2X display, and 5000mAh battery.",
       price: 1199.99,
-      image: "https://images.samsung.com/es/smartphones/galaxy-s23-ultra/buy/02_Image_Carousel/02-3_Group_KV_Exclusive_Color/S23Ultra_groupkv_exclusive_MO.jpg",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1079/10790401/1715-pccom-essential-funda-antishock-transparente-samsung-galaxy-s23-ultra.jpg",
       inStock: true,
       features: [
         "6.8\" Dynamic AMOLED 2X display",
@@ -55,7 +55,7 @@ const technologicalProducts = [
       category: "Accessories",
       description: "Wireless headphones with noise cancellation, high-resolution sound, and 30-hour battery life.",
       price: 348.00,
-      image: "https://www.lavanguardia.com/andro4all/hero/2022/05/Sony-WH-1000XM5.1652371428.8406.jpg?width=768&aspect_ratio=16:9&format=nowebp",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1032/10321208/1622-sony-wh1000xm5bce7-auriculares-inalambricos-con-cancelacion-de-ruido-negros-040cffe9-8cab-4a1e-a833-3338c66fb61e.jpg",
       inStock: false,
       features: [
         "Superior noise cancellation",
@@ -71,7 +71,7 @@ const technologicalProducts = [
       category: "Wearables",
       description: "Smartwatch with Always-On display, health monitoring, and water resistance.",
       price: 399.99,
-      image: "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111848_apple-watch-series8.png",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1058/10581494/1272-apple-watch-series-8-gps-cellular-41mm-caja-de-acero-inoxidable-plata-con-correa-deportiva-blanca.jpg",
       inStock: true,
       features: [
         "Always-On Retina display",
@@ -87,7 +87,7 @@ const technologicalProducts = [
       category: "Accessories",
       description: "Headphones with active noise cancellation, high-quality sound, and up to 24 hours of battery.",
       price: 329.99,
-      image: "https://cdn.mos.cms.futurecdn.net/SCA2aj9p63DU7LTBKRiwfH.jpg",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1084/10847069/1150-bose-quietcomfort-sc-auriculares-inalambricos-con-cancelacion-de-ruido-negros.jpg",
       inStock: true,
       features: [
         "Adjustable noise cancellation",
@@ -103,7 +103,7 @@ const technologicalProducts = [
       category: "Laptops",
       description: "Ultrathin laptop with Intel Core i7 processor, InfinityEdge display, and up to 16GB of RAM.",
       price: 1499.99,
-      image: "https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/emea/hero/spring-sl-cons-dell-ls-xps-9340nt-s2725hs-wl3024-ms5320w-uhp-2601-05-uk-hero-1024x768.jpg?fmt=pjpg&pscan=auto&scl=1&wid=1024&hei=768&resMode=sharp2&op_usm=1.75,0.3,2,0&size=1024,768",
+      image: "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9310/general/xps-13_black_standard.jpg?fmt=png-alpha&pscan=auto&scl=1&hei=476&wid=662&qlt=100,1&resMode=sharp2&size=662,476&chrss=full",
       inStock: true,
       features: [
         "13.4\" InfinityEdge display",
@@ -119,7 +119,7 @@ const technologicalProducts = [
       category: "Cameras",
       description: "Action camera with 5.3K resolution, HyperSmooth stabilization, and extreme condition recording capabilities.",
       price: 399.99,
-      image: "https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202208/22/00110113904469____2__1200x1200.jpg",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1072/10727539/1371-gopro-hero11-black-mini-camara-deportiva-53k-ultrahd.jpg",
       inStock: true,
       features: [
         "5.3K resolution",
@@ -135,7 +135,7 @@ const technologicalProducts = [
       category: "Tablets",
       description: "2-in-1 tablet with Intel Core i7 processor, PixelSense display, and up to 16GB of RAM.",
       price: 999.99,
-      image: "https://i.pcmag.com/imagery/reviews/04oXeqT4MuFbMo7fc7QSrAx-2.fit_lim.size_1050x591.v1680110421.jpg",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1066/10660541/1761-microsoft-surface-pro-9-grafito-intel-evo-core-i7-1265u-16gb-512gb-ssd-13-tactil.jpg",
       inStock: true,
       features: [
         "13\" PixelSense display",
@@ -167,7 +167,7 @@ const technologicalProducts = [
       category: "Consoles",
       description: "Next-generation gaming console with support for 4K games and 120Hz.",
       price: 499.99,
-      image: "https://m.media-amazon.com/images/I/51NbBH89m1L.jpg",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1085/10857444/1215-sony-playstation-5-pro.jpg",
       inStock: true,
       features: [
         "4K games up to 120Hz",
@@ -183,7 +183,7 @@ const technologicalProducts = [
       category: "Consoles",
       description: "Gaming console with support for 4K resolution, HDR, and 120Hz speed.",
       price: 499.99,
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxZNYKF1eE2zMWH9hZ6wOe9iwinL5aaBVI5Z-AgpZiNl8I8UvRgPFapD3HlQkZGTp14Rc&usqp=CAU",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/32/323078/1684-microsoft-xbox-series-x-1tb.jpg",
       inStock: true,
       features: [
         "4K resolution, HDR, and up to 120Hz",
@@ -231,7 +231,7 @@ const technologicalProducts = [
       category: "Smartphones",
       description: "Smartphone with 50 MP camera, 6.7\" OLED display, and Google's Tensor processor.",
       price: 899.99,
-      image: "https://m.media-amazon.com/images/I/711GOHSF5wL.jpg",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1082/10821243/1426-google-pixel-7-pro-5g-12-128gb-blanco-libre.jpg",
       inStock: true,
       features: [
         "6.7\" OLED display",
@@ -243,11 +243,11 @@ const technologicalProducts = [
     },
     {
       id: 16,
-      name: "Amazon Echo Studio",
+      name: "Amazon Echo Pop",
       category: "Smart Home",
       description: "Smart speaker with 3D sound and Dolby Atmos support.",
       price: 199.99,
-      image: "https://m.media-amazon.com/images/I/91Z0cGhaeCL._AC_SX425_.jpg",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1086/10862038/1476-amazon-echo-pop-black-altavoz-inteligente-inalambrico-1a-generacion-15w-negro.jpg",
       inStock: true,
       features: [
         "3D sound with Dolby Atmos",
@@ -263,7 +263,7 @@ const technologicalProducts = [
       category: "Gaming PCs",
       description: "Gaming PC with Intel Core i9 processor and NVIDIA GeForce RTX 3080 graphics card.",
       price: 2799.99,
-      image: "https://thumb.pccomponentes.com/w-530-530/articles/1086/10861261/1349-hp-omen-35l-gt16-0034ns-intel-core-i7-14700f-32gb-1tb-ssd-rtx-4070-super-caracteristicas.jpg",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1084/10848659/1645-hp-omen-35l-gt16-0003ns-intel-core-i5-14400f-16gb-1tb-ssd-rtx-4060-ti-f28353d4-f7eb-4d5a-9c1d-268ddd363810.jpg",
       inStock: true,
       features: [
         "Intel Core i9 10th gen",
@@ -295,7 +295,7 @@ const technologicalProducts = [
       category: "Cameras",
       description: "Mirrorless camera with 45 MP, 8K recording, and image stabilization.",
       price: 3899.99,
-      image: "https://i1.adis.ws/i/canon/eos-r5_front_rf24-105mmf4lisusm_square_32c26ad194234d42b3cd9e582a21c99b",
+      image: "https://thumb.pccomponentes.com/w-530-530/articles/1079/10799491/1985-canon-eos-r5-full-frame-45mp-wifi-cuerpo.jpg",
       inStock: true,
       features: [
         "45 MP resolution",

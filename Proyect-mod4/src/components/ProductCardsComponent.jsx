@@ -6,7 +6,7 @@ import usePagination from "../customHook/usePagination";
 
 //importar css 
 import '../styles/pagination.css'
-
+import '../styles/productsCards.css'
 
 const ProductCardsComponents = () => {
 
@@ -17,30 +17,40 @@ const ProductCardsComponents = () => {
     pasando dos parámetros como son el número de items que se quiere por pág y los items*/
     const { currentItems, currentPage, totalPages, nextPage, prevPage } = usePagination(10, products)
 
+
   return (
-    <section>
+    <section className="section-products-card">
         
-        <h1>Products on sale</h1>
-        {currentItems.map((product) => (
-            <div key={product.id}>
-                <img src={product.image} alt={product.name}/>
-                <div>
-                    <p>{product.name}</p>
+        <h1 className="title-section-cards">Products on sale</h1>
+
+        <div className="products-container">
+            {currentItems.map((product) => (
+            <div className="product-card" key={product.id}>
+
+                <div className="container-img">
+                <img className="product-img" src={product.image} alt={product.name}/>
+                </div>
+                
+                <div className="card-info">
+                    <h3>{product.name}</h3>
                     <p>{product.price} $</p>
                     {product.inStock ? (
-                        <><p>In Stock</p><span className="greenCircle"></span></>
+                        <div className="inStock-products"><p>In Stock</p><span className="greenCircle"></span></div>
                         ) : (
-                        <><p>Out of stock</p><span className="redCircle"></span></>
+                        <div className="noStock-products"><p>Out of stock</p><span className="redCircle"></span></div>
                     )}
-                    <p><Link to={`/products/${product.id}`}>See details</Link></p>
+                    <p className="see-details-product"><Link to={`/products/${product.id}`}>See details</Link></p>
                 </div>
+
             </div>
-        ))}
+            ))}
+        </div>
+        
 
         <div className="pagination">
             <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
-            <span>{`Page ${currentPage} of ${totalPages}`}</span>
-            <button onClick={nextPage}>Next</button>
+            <span>{`${currentPage} of ${totalPages}`}</span>
+            <button onClick={nextPage} disabled={currentPage === 2}>Next</button>
         </div>
 
     </section>

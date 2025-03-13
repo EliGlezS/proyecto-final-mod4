@@ -2,13 +2,17 @@
 
 import ProductCardsComponents from "../components/ProductCardsComponent"
 import useScrollToTop from "../customHook/useScrollToTop"
+import '../styles/home.css'
 
 const Home = () => {
 
   useScrollToTop()
 
   return (
-    <ProductCardsComponents/>
+    <div className="main">
+      <ProductCardsComponents/>
+    </div>
+    
   )
 }
 
