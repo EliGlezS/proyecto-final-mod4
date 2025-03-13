@@ -1,0 +1,101 @@
+/*Estilos para el footer*/
+
+.footer-shop{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: rgb(22, 21, 21);
+    width: 100%;
+    min-width: 350px;
+    height: auto;
+    padding: 10px 20px;
+    margin-top: 30px;
+    gap: 5px;
+
+    /*Estilos para el logo de la empresa*/
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+        
+        img{
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    /*Estilos para la información de la empresa*/
+    .footer-information{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 60%;
+        gap: 2px;
+
+        a{
+            color: rgb(99, 94, 94);
+            font-size: 15px;
+            text-align: center;
+        }
+        a:hover{
+            font-weight: bold;
+            color:  #91779b;
+        }
+    }
+
+    /*Estilos para los iconos de las redes sociales*/
+    .icons-social-media{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 200px;
+        min-width: 150px;
+        gap: 20px;
+        
+        .socialx, .instagram, .facebook {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%; /* Redondear el borde de los iconos */
+            width: 40px;
+            height: 40px;
+            padding: 0; /* Evitar que el padding cambie el tamaño */
+            border: 2px solid #755086;
+            background-color: #bab7bb;
+            box-sizing: border-box; /* Asegura que padding y border no afecten el tamaño final */
+            transition: all 0.3s ease; /* Añadir transición para que sea suave */
+
+            svg{
+                height: 18px;
+                width: 18px; 
+                fill: rgb(99, 94, 94);  
+                cursor: pointer;
+            }
+        }
+        .socialx:hover, .instagram:hover, .facebook:hover {
+            background-color: #c5acce;
+            border-color: 2px solid  #1b0725;
+        
+            svg{
+                width: 18px;
+                height: 18px;
+                fill: #1b0725;
+                cursor: pointer;
+                transition: transform 0.3s ease; /* Añadir transición para hacer más suave el cambio de tamaño */
+            }
+        
+        }
+
+        .socialx:hover, .instagram:hover, .facebook:hover {
+            fill:rgba(255, 255, 255, 0.658);  
+        }
+    }
+}

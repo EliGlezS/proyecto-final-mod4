@@ -11,6 +11,7 @@ import HeaderComponent from './components/HeaderComponent'
 import { UserProvider } from './context/UserContext'
 import Checkout from './pages/Checkout'
 import Login from './pages/Login'
+import FooterComponent from './components/FooterComponent'
 
 
 function App() {
@@ -22,13 +23,13 @@ function App() {
         <UserProvider>
         <HeaderComponent/>
         <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/products/:id' element={<ProductsDetails/>}/>
-        <Route path='/cart' element={<ShoppingCart/>}/>
-        <Route path='/checkout' element={<Checkout/>}/>
-        <Route path='/login' element={<Login/>}/>
-      </Routes>
-      
+          <Route path='/' element={<Home/>}/>
+          <Route path='/products/:id' element={<ProductsDetails/>}/>
+          <Route path='/cart' element={<ShoppingCart/>}/>
+          <Route path='/checkout' element={<Checkout/>}/>
+          <Route path='/login' element={<Login/>}/>
+        </Routes>
+        <FooterComponent/>
         </UserProvider>
       </ProductsCartProvider>
     </ProductsProvider>
