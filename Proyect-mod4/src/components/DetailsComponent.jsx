@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react"
 import { ProductsCartContext } from "../context/ProductsCartContext"
 import { ProductsContext } from "../context/ProductsContext"
 import { Link, useNavigate, useParams } from "react-router-dom"
+import "../styles/detailsComponent.css" 
 
 
 const DetailsComponent = () => {
@@ -37,8 +38,10 @@ const DetailsComponent = () => {
   // }
 
   return (
+    
     <div className="product-details">
-        <h1>Product Details</h1>
+
+        <h1  className="title-product-details">Product Details</h1>
 
         <div className="container-img-info-buttons">
 
@@ -48,38 +51,43 @@ const DetailsComponent = () => {
           </div>
 
           {/* Contenedor de los detalles  */}
-          <div className="info-product-details">
-              <h2>{productDetails.name}</h2>
-              <p>{productDetails.category}</p>
-              <p>{productDetails.description}</p>
-              <ul>{productDetails.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-              </ul>
-              <p>{productDetails.price} $</p>
+          <div className="container-info-buttons">
 
-          </div>
+            <div className="info-product-details">
+                <h2>{productDetails.name}</h2>
+                <p>{productDetails.category}</p>
+                <p>{productDetails.description}</p>
+                <ul>{productDetails.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+                </ul>
+                <p>{productDetails.price} $</p>
 
-          {/* Contenedor de los botones  */}
-          <div className="buttons-product-details">
-            {/*Si el producto que estamos mirando está en stock (true) aparece un botón que lo añade al carrito, pero 
-            si stock es false aparece un botón desabilitado */}
-            {productDetails.inStock ? (
-              <button onClick={() => addProductCart(productDetails)}>Add to Cart</button>
-            ) : (
-              <button disabled>Not available at the moment</button>
-            )
-            }  
-          
-            {/* Mirar si es corecto navigate o link */}
-            <p>
-              <Link to="/"> 
-                Back Home
-              </Link>   
-            </p>
+            </div>
+
+            {/* Contenedor de los botones  */}
+            <div className="buttons-product-details">
+              {/*Si el producto que estamos mirando está en stock (true) aparece un botón que lo añade al carrito, pero 
+              si stock es false aparece un botón desabilitado */}
+              {productDetails.inStock ? (
+                <button className="button-addCart" onClick={() => addProductCart(productDetails)}>Add to Cart</button>
+              ) : (
+                <button className="button-disable" disabled>Not available at the moment</button>
+              )
+              }  
             
-          </div>
+              {/* Mirar si es corecto navigate o link */}
+              <p>
+                <Link to="/"> 
+                  Back Home
+                </Link>   
+              </p>
+              
+            </div>
 
+
+          </div>
+          
         </div>    
     </div>
   )

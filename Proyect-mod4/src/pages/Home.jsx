@@ -9,7 +9,7 @@ const Home = () => {
   useScrollToTop()
 
   return (
-    <div className="main">
+    <div className="main-home">
       <ProductCardsComponents/>
     </div>
     

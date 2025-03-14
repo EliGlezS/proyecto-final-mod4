@@ -47,7 +47,8 @@
         left: 0;
         text-align: center;
         width: 100%;
-        height: 100vh; /* Ocupa el 100% de la altura de la pantalla menos la altura del header */
+        height: 106vh; /* Ocupa el 100% de la altura de la pantalla menos la altura del header */
+        /*height: 100vh; para sansung galaxy 8*/
         background-color: #303233;
         padding:  40px;
         min-width: 200px;

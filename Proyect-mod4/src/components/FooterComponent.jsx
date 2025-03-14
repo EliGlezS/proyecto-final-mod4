@@ -11,21 +11,21 @@ const FooterComponent = () => {
     <div className="footer-shop">
       {/* <!--Contenedor con el logo de la marca--> */}
 
-        <div class="footer-logo">
+        <div className="footer-logo">
             <img src={logoPrimeZone} alt="logo de la tienda de ropa"/>
         </div>
 
         {/* <!--División para la información de la empresa--> */}
-        <div class="footer-information">
-            <a  href="#" class="contact">Contact</a>
-            <a  href="#" class="company">Our company</a>
-            <a  href="#" class="privacy-policy">Privacy Policy</a>
-            <a  href="#" class="services">Services</a>
-            <a  href="#" class="offers">Offers and campaigns</a>
+        <div className="footer-information">
+            <a  href="#" className="contact">Contact</a>
+            <a  href="#" className="company">Our company</a>
+            <a  href="#" className="privacy-policy">Privacy Policy</a>
+            <a  href="#" className="services">Services</a>
+            <a  href="#" className="offers">Offers and campaigns</a>
         </div>
 
         {/* <!--División para los iconos de las redes sociales--> */}
-        <div class="icons-social-media">
+        <div className="icons-social-media">
 
             {/* <!--Twitter--> */}
             <div className="socialx">
