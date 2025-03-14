@@ -77,7 +77,7 @@ const DetailsComponent = () => {
               }  
             
               {/* Mirar si es corecto navigate o link */}
-              <p>
+              <p className="back-home-from-details">
                 <Link to="/"> 
                   Back Home
                 </Link>   

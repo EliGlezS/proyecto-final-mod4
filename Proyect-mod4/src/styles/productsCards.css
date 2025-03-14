@@ -177,5 +177,10 @@
             }
         }
 
+        .product-card:hover{
+            transform: scale(1.02); /* Aumenta el tamaño en un 10% */
+            box-shadow: 0 3px 8px rgb(135, 108, 138); /* Agrega sombra para resaltar */
+        }
+
     }
 }
