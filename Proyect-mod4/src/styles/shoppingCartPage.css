@@ -1,0 +1,29 @@
+/*Estilos generales para el carrito de la compra esto contiene un div con un h1 y el componente de la lista (estilos en otro css)*/
+
+
+.shoppingCart-page{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 380px;
+    min-height: 100vh; /*Asegura que el contenedor ocupe toda la altura de la pág*/
+    height: auto;
+
+    h1{
+        position: relative;
+        top: 100px;
+        left: 0px;
+        text-align: left;
+        font-size: 1.8rem;
+        width: 100%;
+        margin: 0px 0px 150px;/*Revisar*/
+        padding: 0px 80px;
+        cursor: default;
+        color: rgb(22, 21, 21);
+        z-index: -1;
+    }
+}
+

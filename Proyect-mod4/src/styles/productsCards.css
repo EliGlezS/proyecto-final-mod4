@@ -42,12 +42,13 @@
             flex-direction: row;
             justify-content: space-evenly;
             width: 100%;
-            min-width: 330px;
+            min-width: 400px;
             height: auto;
             padding: 0 50px;
+            margin: 10px; /*Cambio para que se vea bien en sansung galaxy mas centradas las cards*/
             margin-bottom: 40px;
             gap: 25px;
-            margin-top: 180px;
+            margin-top: 150px;
            
         
 
