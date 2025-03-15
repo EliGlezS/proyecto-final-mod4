@@ -1,15 +1,12 @@
 //Importaciones
-//header
-//footer
+
 import FormLoginComponent from "../components/FormLoginComponent"
+import "../styles/FormLoginComponent.css"
 
 
 const Login = () => {
   return (
-    <div>
-        <h2>Login</h2>
-        <FormLoginComponent/>
-    </div>
+    <FormLoginComponent/>
   )
 }
 

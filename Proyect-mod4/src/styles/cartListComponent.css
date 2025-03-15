@@ -306,23 +306,8 @@
     }
 }
 
-/* .container-img{ 
-  box-sizing: border-box;
-  width: 200px;
-  height:205px;
-  margin-left: 200px;
-  
-  /* Imagen del producto 
-  img {
-    width: 200px; 
-    height: 200px;
-    border-radius: 0.5rem;
-    
-  }
-} */
 
-
-/* Responsive Design: Ajustes para pantallas pequeñas (móviles) */
+/* Responsive Design: Ajustes para pantallas grandes*/
 @media (min-width: 1200px) {
   .cart-list-full {
     

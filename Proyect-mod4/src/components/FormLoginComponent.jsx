@@ -26,23 +26,20 @@ const FormLoginComponent = () => {
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
     //Función validacion del Login y dentro se validan el usuario y la password
-
     const validationLogin = () =>{
-
-      console.log(username, password);
 
       //Validación del nombre de usuario
       if(!usernameRegex.test(username)){
-        console.log("username invalid")
         //si no cumple con la validación sale un error 
         setErrorUserName("The username must have more than 5 letters");
         return false;
+      }else{
+        setErrorUserName("");
       }
 
       //Validación de la password
       if (!passwordRegex.test(password)) {
-        console.log("password invalid");
-        setErrorPassword("The password must be at least 8 characters, including one uppercase letter, one lowercase letter, and one number.");
+        setErrorPassword("The password must be at least 8 characters, including uppercase letter, lowercase letter and number.");
         return false;
       }
 
@@ -61,44 +58,43 @@ const FormLoginComponent = () => {
       //Si se valida el formulario, se hace el login y se guarda el username --> da un token y redirige a login 
       //Al ser un envio de formulario se usa el Navigate 
       if (validationLogin()) {
-        login(username, "fakeTokenUser1234");
-        navigate("/login") //?? no se si a checkout o home y que pueda entrar de nuevo ??
+        login(username);
+        navigate("/");
       }
     }
 
     //Manejador para el logout
     const handleLogout = () =>{
-      console.log("Logout")
       logout();
-      console.log("Redirecting to login");
-      navigate("/login");//Se redirige a login después de hacer logout
+      navigate("/");//Se redirige a home para mostrar después de hacer logout
     }
 
   return (
-    <div>
+    <div className="general-container-login-logout">
       {!isLoggedIn ? (
-        <>
-          <form onSubmit={handleLoginSubmit}>
+        <div className="container-login">
+        <h1>Login</h1>
+          <form  className="form-login" onSubmit={handleLoginSubmit} noValidate>
             <div>
               <label>UserName:</label>
-              <input type="text" value={username} onChange={(e) => setUserName(e.target.value)} required/>
+              <input type="text" value={username} onChange={(e) => setUserName(e.target.value)} placeholder="Username..." required/>
               {/* Muestra el mensaje de error de username */}
               {errorUserName && <p style={{color:"red"}}>{errorUserName}</p>}
             </div>
             <div>
               <label>Password:</label>
-              <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
+              <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password..." required/>
               {errorPassword && <p style={{color:"red"}}>{errorPassword}</p>}
             </div>
-            <button type="submit">Login</button>
+            <button className="login-button" type="submit">Login</button>
           </form>
-        </>
+        </div>
       ):(
-        <>
-          <h2>Welcome, {username}!</h2>
-          <button onClick={handleLogout}>Logout</button>
-          <Link to="/"><p>Home</p></Link>
-        </>
+        <div className="container-logout">
+          <h1>Welcome, {username}!</h1>
+          <button className="logout-button" onClick={handleLogout}>Logout</button>
+          <Link to="/"><p className="home-link">Home</p></Link>
+        </div>
       )
     }
     </div>

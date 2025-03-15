@@ -113,6 +113,8 @@
 
 /* Responsividad */
 
+/*Dispositivos de pantalla hasta 768px*/
+
 @media (max-width: 768px) {
     .general-container-checkout {
         .container-checkout {
@@ -185,7 +187,7 @@
     }
 }
 
-/*Dispositivos de pantalla hasta 390px*/
+/*Dispositivos de pantalla hasta 480px*/
 @media (max-width: 480px) {
     .general-container-checkout {
         background-color: white;
