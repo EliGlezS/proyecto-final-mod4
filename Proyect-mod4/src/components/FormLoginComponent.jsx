@@ -22,8 +22,8 @@ const FormLoginComponent = () => {
     const navigate = useNavigate();
 
     //Expresiones regex para validar username y el password
-    const usernameRegex = /^[a-zA-Z0-9]{5,}$/;
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    const usernameRegex = /^[a-zA-Z0-9]{6,9}$/;//Debe tener más de 5 y no más de 9 caracteres que pueden incluir letras (mayúsculas y minúsculas) y números
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{9,12}$/;//Debe tener más de 8 caracteres y no mas de 12, debe incluir letras mayúsculas, minúsculas, números y caracteres especiales.
 
     //Función validacion del Login y dentro se validan el usuario y la password
     const validationLogin = () =>{
@@ -31,7 +31,7 @@ const FormLoginComponent = () => {
       //Validación del nombre de usuario
       if(!usernameRegex.test(username)){
         //si no cumple con la validación sale un error 
-        setErrorUserName("The username must have more than 5 letters");
+        setErrorUserName("Username must be between 6-9 characters, and can only contain letters (uppercase and lowercase) and numbers.");
         return false;
       }else{
         setErrorUserName("");
@@ -39,7 +39,7 @@ const FormLoginComponent = () => {
 
       //Validación de la password
       if (!passwordRegex.test(password)) {
-        setErrorPassword("The password must be at least 8 characters, including uppercase letter, lowercase letter and number.");
+        setErrorPassword("Password must be between 9-12 characters, including one uppercase letter, one lowercase letter, one number, and one special character.");
         return false;
       }
 
@@ -77,13 +77,13 @@ const FormLoginComponent = () => {
           <form  className="form-login" onSubmit={handleLoginSubmit} noValidate>
             <div>
               <label>UserName:</label>
-              <input type="text" value={username} onChange={(e) => setUserName(e.target.value)} placeholder="Username..." required/>
+              <input type="text" value={username} onChange={(e) => setUserName(e.target.value)} placeholder="Username..." maxLength="9" required/>
               {/* Muestra el mensaje de error de username */}
               {errorUserName && <p style={{color:"red"}}>{errorUserName}</p>}
             </div>
             <div>
               <label>Password:</label>
-              <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password..." required/>
+              <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password..." maxLength="12" required/>
               {errorPassword && <p style={{color:"red"}}>{errorPassword}</p>}
             </div>
             <button className="login-button" type="submit">Login</button>
