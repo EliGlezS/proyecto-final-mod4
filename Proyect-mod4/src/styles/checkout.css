@@ -1,0 +1,225 @@
+/* Estilos generales para el checkout */
+.general-container-checkout {
+    padding: 20px;
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+   
+    .container-checkout {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 600px; /* Tamaño máximo para una mejor visualización */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        /* Estilos para la sección de mensajes y métodos de pago */
+        .checkout-message-payment-logos {
+            width: 100%;
+            margin-top: 20px;
+
+            h2 {
+                font-size: 1.8rem;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #555;
+                margin: 5px 0;
+            }
+
+            p:nth-child(3) {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #333;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            /* Contenedor de íconos de métodos de pago */
+            > div {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin-top: 30px;
+                margin-bottom: 80px;
+                align-items: center;
+                justify-content: center;
+
+                .container-icon-masterCard,
+                .container-icon-visa,
+                .container-icon-paypal,
+                .container-icon-bizum {
+                    width: 100px;
+                    height: 80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid #ddd; /* Borde similar a un cuadrado */
+                    border-radius: 8px; /* Bordes redondeados */
+                    transition: transform 0.3s ease; /* Transición para el hover */
+                    padding: 10px;
+
+                    &:hover {
+                        transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+                    }
+
+                    svg,
+                    img {
+                        width: 80%;
+                        height: 80%;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            /* Estilo para el botón centrado */
+            .p-button {
+                margin-top: 20px;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    background-color: #efe5f3;
+                    color: #250f30;
+                    border: 1px solid #755086;
+                    padding: 12px 24px;
+                    border-radius: 0.5rem;
+                    font-weight: bold;
+                    transition: background-color 0.3s ease;
+                }
+
+                a:hover {
+                    background-color: #755086;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+/* Responsividad */
+
+@media (max-width: 768px) {
+    .general-container-checkout {
+        .container-checkout {
+            .checkout-message-payment-logos {
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+
+                > div {
+                    flex-direction: column;
+                }
+
+                .container-icon-masterCard,
+                .container-icon-visa,
+                .container-icon-paypal,
+                .container-icon-bizum {
+                    max-width: 90px;
+                    max-height: 60px;
+                }
+            }
+        }
+    }
+}
+
+/*Dispositivos de pantalla hasta 390px*/
+
+@media (max-width: 390px) {
+    .general-container-checkout {
+        margin-left: 25px;
+        background-color: white;
+    
+        .container-checkout {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            min-width: 300px;
+            margin-top: 90px;
+
+            .checkout-message-payment-logos {
+                box-sizing: border-box;
+
+                h2 {
+                   
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+
+                > div {
+                    margin-bottom: 50px;
+                    .container-icon-masterCard,
+                    .container-icon-visa,
+                    .container-icon-paypal,
+                    .container-icon-bizum {
+                        max-width: 80px;
+                        max-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Dispositivos de pantalla hasta 390px*/
+@media (max-width: 480px) {
+    .general-container-checkout {
+        background-color: white;
+
+        .container-checkout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin-top: 90px;
+           
+
+            .checkout-message-payment-logos {
+                h2 {
+                   
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+
+                > div {
+                    margin-bottom: 50px;
+                    .container-icon-masterCard,
+                    .container-icon-visa,
+                    .container-icon-paypal,
+                    .container-icon-bizum {
+                        max-width: 80px;
+                        max-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

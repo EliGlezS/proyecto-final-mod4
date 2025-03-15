@@ -66,8 +66,11 @@ const CartListComponent = () => {
                 {productsCart.map((product, index) => (
 
                 <div className="cart-product-img-info-buttons" key={index}>
-
-                    <img src={product.image} alt={product.name}/>
+                    
+                    <div className="container-img"> 
+                         <img src={product.image} alt={product.name}/>
+                    </div>
+                   
 
                     <div className="cart-product-info-buttons">
 
