@@ -50,7 +50,7 @@ const DetailsComponent = () => {
               <img src={productDetails.image} alt={productDetails.name}/>
           </div>
 
-          {/* Contenedor de los detalles  */}
+          {/* Contenedor de los detalles */}
           <div className="container-info-buttons">
 
             <div className="info-product-details">
@@ -76,7 +76,7 @@ const DetailsComponent = () => {
               )
               }  
             
-              {/* Mirar si es corecto navigate o link */}
+              {/*navigate o link : Se usó link*/}
               <p className="back-home-from-details">
                 <Link to="/"> 
                   Back Home

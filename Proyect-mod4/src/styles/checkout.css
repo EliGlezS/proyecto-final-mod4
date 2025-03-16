@@ -13,7 +13,7 @@
     .container-checkout {
         box-sizing: border-box;
         width: 100%;
-        max-width: 600px; /* Tamaño máximo para una mejor visualización */
+        max-width: 600px; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -68,9 +68,9 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border: 2px solid #ddd; /* Borde similar a un cuadrado */
-                    border-radius: 8px; /* Bordes redondeados */
-                    transition: transform 0.3s ease; /* Transición para el hover */
+                    border: 2px solid #ddd; 
+                    border-radius: 8px; 
+                    transition: transform 0.3s ease; 
                     padding: 10px;
 
                     &:hover {

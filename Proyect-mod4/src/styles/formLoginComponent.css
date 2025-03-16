@@ -1,3 +1,5 @@
+/*Estilos para el formulario login y logout*/
+
 /* Contenedor general que ocupa todo el alto y ancho de la pantalla */
 .general-container-login-logout {
     display: flex;
@@ -28,6 +30,7 @@
             color: #333;
         }
 
+        /* Formulario login*/
         .form-login {
             display: flex;
             flex-direction: column;
@@ -68,6 +71,7 @@
 
             }
 
+             /* Botón*/
             .login-button {
                 padding: 12px;
                 background-color: #efe5f3;

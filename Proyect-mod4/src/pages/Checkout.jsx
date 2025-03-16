@@ -1,4 +1,4 @@
-//Se importa el contexto del usuario 
+//Importaciones
 import { useContext } from "react"
 import { UserContext } from "../context/UserContext";
 import { Link } from "react-router-dom";

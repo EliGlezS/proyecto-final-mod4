@@ -11,9 +11,9 @@ export const UserContext = createContext();
 
 export const UserProvider = ({children}) => {
 
-    /*Se usan dos useState uno para guardar si el usuario está logeado 
-    y otro para guardar el nombre del usuario que se usará posteriormente (se usa
-    otro para el password aunque recomiendan NO guardar la contraseña?)*/
+    /*Se usan tres useState uno para guardar si el usuario está logeado,
+    otro para guardar el nombre del usuario que se usará posteriormente y
+    otro para el password*/
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [username, setUserName] = useState("");
     const [password, setPassword] = useState("");
@@ -34,7 +34,7 @@ export const UserProvider = ({children}) => {
     const logout = () =>{
         setIsLoggedIn(false); //El usuario pasa a no estar logeado
         setUserName(""); //al no estar logeado el usuario no tiene nombre guardado
-        setPassword("");
+        setPassword(""); //al no estar logeado el usuario no tiene la contraseña guardada
 
         //Se limpia el localStorage
         localStorage.removeItem("isLoggedIn");

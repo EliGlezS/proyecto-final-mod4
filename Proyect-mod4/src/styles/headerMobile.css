@@ -1,80 +1,73 @@
 /*Estilos para el header Movil*/
 
 .header-mobile-shop{
-    box-sizing: border-box;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    background-color: rgb(22, 21, 21);
-    width: 100%;
-    min-width: 200px;
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  background-color: rgb(22, 21, 21);
+  width: 100%;
+  min-width: 200px;
+  height: 80px;
+  padding: 0 32px;
+  margin-bottom: 100px;
+
+  /*Estilos para el logo*/
+  .logo-shop{
+    width: 75px;
+    min-width: 50px;
+    min-height: auto;
     height: 80px;
-    padding: 0 32px;
-    margin-bottom: 100px;
+  }
 
-    /*Estilos para el logo*/
-    .logo-shop{
-        width: 75px;
-        min-width: 50px;
-        min-height: auto;
-        height: 80px;
+  /* Estilos para el menú hamburguesa */
+  .hamburguer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+
+    span {
+      display: block;
+      height: 4px;
+      background-color: rgb(204, 198, 198);
+      border-radius: 5px;
     }
-
-    /* Estilos para el menú hamburguesa */
-
-    .hamburguer-menu {
-        display: flex;
-        /* position: relative; */
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 24px;
-
-        span {
-            display: block;
-            height: 4px;
-            background-color: rgb(204, 198, 198);
-            border-radius: 5px;
-        }
-    }
+  }
   
-    /*Estilos para el contenido dentro del menú*/
-    .menu {
-        position: absolute;
-        top: 78px;
-        left: 0;
-        text-align: center;
-        width: 100%;
-        height: 128vh; /* Ocupa el 100% de la altura de la pantalla menos la altura del header */
-        /*height: 100vh; para sansung galaxy 8*/
-        background-color: #303233;
-        padding:  40px;
-      
-    
+  /*Estilos para el contenido dentro del menú*/
+  .menu {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 128vh; 
+    background-color: #303233;
+    padding:  40px;
 
-        .open{
-            display: block;/*Muestra el menú cuando se activa*/
-        }
-
-        .nav-container{
-            width: 100%;
-            margin-bottom: 50px;
-        
-            ul {
-                width: 100%;
-        
-                li{
-                    margin: 30px 0;
-                    font-size: 18px; 
-                    color:#e1d1e9;
-                }
-            }
-
-        }
-
+    .open{
+      display: block;/*Muestra el menú cuando se activa*/
     }
+
+    .nav-container{
+      width: 100%;
+      margin-bottom: 50px;
+        
+      ul {
+        width: 100%;
+
+        li{
+          margin: 30px 0;
+          font-size: 18px; 
+          color:#e1d1e9;
+        }
+      }
+    }
+  }
   
   .profile-icons-header{
     box-sizing: border-box;
@@ -85,34 +78,33 @@
     min-width: 150px;
     
     .login-mobile-container-svg{
-        border-radius: 80%;
-        width: 60px;
-        min-width: 60px;
-        height: 60px;
-        background-color: #b090c0;
-        padding: 10px;
-        border: 2px solid #755086;
+      border-radius: 80%;
+      width: 60px;
+      min-width: 60px;
+      height: 60px;
+      background-color: #b090c0;
+      padding: 10px;
+      border: 2px solid #755086;
 
-        svg{
-            color: #250f30;
-        }  
+      svg{
+        color: #250f30;
+      }  
     }
 
     .cart-mobile-container-svg{
-        border-radius: 80%;
-        width: 60px;
-        min-width: 60px;
-        height: 60px;
-        background-color: #b090c0;
-        padding: 10px;
-        border: 2px solid #755086;
+      border-radius: 80%;
+      width: 60px;
+      min-width: 60px;
+      height: 60px;
+      background-color: #b090c0;
+      padding: 10px;
+      border: 2px solid #755086;
 
-        svg{
-            color: #250f30;
-        }
+      svg{
+        color: #250f30;
+      }
     }
-  }
-  
+  }  
 }
 
 

@@ -45,7 +45,7 @@
 
 }
 
-/*Estilos para el carrito cuando tenemos productos en el.*/
+/*Estilos para el carrito cuando tenemos productos en él.*/
 .cart-list-full {
   box-sizing: border-box;
   display: flex;
@@ -177,7 +177,7 @@
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ddd; /* Borde alrededor del contenedor del precio */
+    border: 1px solid #ddd; 
     padding: 20px;
     box-sizing: border-box;
     border-radius: 8px;
@@ -223,7 +223,7 @@
           text-decoration: underline;
           text-decoration-color: #755086;
           text-decoration-thickness: 2px;
-          text-underline-offset: 4px; /* Distancia entre el texto y el subrayado */
+          text-underline-offset: 4px; 
         }
       }
     }
@@ -249,10 +249,11 @@
 }
   
 /* Responsive Design: Ajustes para pantallas pequeñas (móviles) */
+
 @media (max-width: 768px) {
     .cart-list-full {
-        margin-left: 40px;/*Se cambia de 50 a 40*/
-        margin-right: 80px;/*Se cambia de 30 a 70*/
+        margin-left: 40px;
+        margin-right: 80px;
        
       .cart-product-img-info-buttons {
         flex-direction: column;
@@ -311,10 +312,8 @@
 @media (min-width: 1200px) {
   .cart-list-full {
     
-     
     .cart-product-img-info-buttons {
       
-
       .container-img{ 
         box-sizing: border-box;
         width: 200px;

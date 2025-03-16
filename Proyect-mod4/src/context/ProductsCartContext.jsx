@@ -1,4 +1,4 @@
-/*Se hace otro contexto para los productos del carrito y los
+/*Se hace un contexto para los productos del carrito y los
 manejadores que se van a usar en distintos componentes*/
 
 //Importaciones
@@ -48,7 +48,7 @@ export function ProductsCartProvider({ children }) {
                     return {...item, quantity: item.quantity -1};
                 }
             }
-            else{//Si no es el producto que buscamos, lo dejamos igual
+            else{
                 return item;
             }
             //Se hace un filter para tener un array con los productos que no son null

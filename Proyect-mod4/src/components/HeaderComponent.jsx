@@ -22,7 +22,7 @@ poder cambiar el diseño de la pág según esta.  */
   };
 
   //Ejecuta el código cuando se monta el componente, se usa para agregar o quitar el addEvenListener
-  // Usar el hook useEffect para escuchar un event listener al resize(es un evento en JavaScript que se dispara cuando el tamaño de la ventana del navegador cambia)
+  // Usar el hook useEffect para escuchar un event listener al resize(evento en JavaScript que se dispara cuando el tamaño de la ventana del navegador cambia)
   useEffect(() => {
 
     // Agregar el event listener

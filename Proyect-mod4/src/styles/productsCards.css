@@ -22,36 +22,20 @@
 
     /*Estilos para el contenedor de las cards*/
     .products-container{
-        /* box-sizing: border-box;
+        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
-        min-width: 330px;
+        min-width: 400px;
         height: auto;
-        padding: 0 100px;
+        padding: 0 50px;
+        margin: 10px; 
         margin-bottom: 40px;
         gap: 25px;
-        margin-top: 180px; */
-
-        
-            box-sizing: border-box;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: 100%;
-            min-width: 400px;
-            height: auto;
-            padding: 0 50px;
-            margin: 10px; /*Cambio para que se vea bien en sansung galaxy mas centradas las cards*/
-            margin-bottom: 40px;
-            gap: 25px;
-            margin-top: 150px;
+        margin-top: 150px;
            
-        
-
         /*Estilos para cada card*/
         .product-card{
             box-sizing: border-box;
@@ -129,7 +113,7 @@
                     }
                 }
 
-                /*Estilos para el contenedor que muestra si el producto noestá en stock*/
+                /*Estilos para el contenedor que muestra si el producto no está en stock*/
                 .noStock-products{
                     box-sizing: border-box;
                     display: flex;
@@ -158,19 +142,19 @@
                 .see-details-product{
                     display: inline-block;
                     padding: 10px 20px;
-                    background-color: #efe5f3; /* Color de fondo (puedes cambiarlo) */
-                    color: #250f30; /* Color del texto */
+                    background-color: #efe5f3; 
+                    color: #250f30; 
                     text-align: center;
-                    border-radius: 5px; /* Bordes redondeados */
-                    font-size: 16px; /* Tamaño del texto */
-                    font-weight: bold; /* Texto en negrita */
-                    text-decoration: none; /* Remueve el subrayado */
-                    cursor: pointer; /* Hace que se vea como un botón interactivo */
+                    border-radius: 5px; 
+                    font-size: 16px; 
+                    font-weight: bold; 
+                    text-decoration: none; 
+                    cursor: pointer; 
                     transition: background-color 0.3s ease; /* Animación suave para el cambio de color */
                     border: 1px solid #755086;
                 }
                 .see-details-product:hover {
-                    background-color:  #755086; /* Color de fondo cuando se pasa el ratón (hover) */
+                    background-color:  #755086; 
                     color: white;
                 }
                   
@@ -179,9 +163,8 @@
         }
 
         .product-card:hover{
-            transform: scale(1.02); /* Aumenta el tamaño en un 10% */
+            transform: scale(1.02); /* Aumenta el tamaño */
             box-shadow: 0 3px 8px rgb(135, 108, 138); /* Agrega sombra para resaltar */
         }
-
     }
 }

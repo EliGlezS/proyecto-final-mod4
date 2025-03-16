@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { ProductsContext } from "../context/ProductsContext";
 import { Link } from "react-router-dom";
-//importar LINK o NAVIGATE?
 import usePagination from "../customHook/usePagination";
 
 //importar css 
@@ -13,9 +12,9 @@ const ProductCardsComponents = () => {
     //Usamos el contexto de los productos 
     const {products} = useContext(ProductsContext);
 
-    /*Se taren los datos necesarios a través del uso del customHook para la paginación
+    /*Se traen los datos necesarios a través del uso del customHook para la paginación
     pasando dos parámetros como son el número de items que se quiere por pág y los items*/
-    const { currentItems, currentPage, totalPages, nextPage, prevPage } = usePagination(10, products)
+    const { currentItems, currentPage, totalPages, nextPage, prevPage } = usePagination(10, products);
 
 
   return (

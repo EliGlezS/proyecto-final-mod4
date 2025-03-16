@@ -7,7 +7,7 @@
     justify-content:space-evenly;
     background-color: rgb(22, 21, 21);
     width: 100%;
-    min-width: 433px; /*Se cambio de 350px a 400 y de 400 a 418 REVISAR*/
+    min-width: 433px; 
     height: auto;
     padding: 10px 22px;
     margin-top: 30px;
@@ -61,16 +61,16 @@
         gap: 20px;
         
         .socialx, .instagram, .facebook {
+            box-sizing: border-box; /* Asegura que padding y border no afecten el tamaño final */
             display: inline-flex;
-            align-items: center;
             justify-content: center;
-            border-radius: 50%; /* Redondear el borde de los iconos */
+            align-items: center;
+            border-radius: 50%; 
             width: 40px;
             height: 40px;
-            padding: 0; /* Evitar que el padding cambie el tamaño */
+            padding: 0; 
             border: 2px solid #755086;
             background-color: #bab7bb;
-            box-sizing: border-box; /* Asegura que padding y border no afecten el tamaño final */
             transition: all 0.3s ease; /* Añadir transición para que sea suave */
 
             svg{

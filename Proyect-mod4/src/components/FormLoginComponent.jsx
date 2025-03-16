@@ -18,7 +18,7 @@ const FormLoginComponent = () => {
     const [errorUserName, setErrorUserName] = useState(""); 
     const [errorPassword, setErrorPassword] = useState("");
 
-    //Se usa useNavigate para que al realizar el formul
+    //Se usa useNavigate para que al realizar el formulario se redirija automáticamente a la pág de inicio
     const navigate = useNavigate();
 
     //Expresiones regex para validar username y el password
@@ -55,7 +55,7 @@ const FormLoginComponent = () => {
       //Se previene el comportamiento por defecto del navegador con el formulario
       event.preventDefault();
 
-      //Si se valida el formulario, se hace el login y se guarda el username --> da un token y redirige a login 
+      //Si se valida el formulario, se hace el login y se guarda el username --> redirige a login 
       //Al ser un envio de formulario se usa el Navigate 
       if (validationLogin()) {
         login(username);
@@ -66,7 +66,7 @@ const FormLoginComponent = () => {
     //Manejador para el logout
     const handleLogout = () =>{
       logout();
-      navigate("/");//Se redirige a home para mostrar después de hacer logout
+      navigate("/");//Se redirige a home después de hacer logout
     }
 
   return (

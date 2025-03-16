@@ -100,9 +100,7 @@ const CartListComponent = () => {
                         <h3>Total</h3>
                         <p>{price.toFixed(2)} $</p>
                     </div>
-
-                    {/*Podría poner un botón chekout y compruebe si está login, 
-                    si es así va a una pag que ponga proceda al pago, Gracias por su compra, y si no que te lleve a login */}
+                    
                     <p className="continue-shopping-button">
                         <Link to="/"> 
                             Continue Shopping

@@ -1,4 +1,6 @@
- body {
+/*Estilos de App para evitar que se muestre la barra de scroll*/
+
+body {
     overflow: scroll;
 }
 
